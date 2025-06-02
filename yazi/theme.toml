@@ -1,0 +1,12 @@
+[mode]
+# “NOR” pill: blue background, white text
+normal_main = { bg = "#519ABA", fg = "white", bold = true }
+
+# “4K” pill: white background, blue text
+normal_alt  = { bg = "white",   fg = "#519ABA" }
+
+[status]
+# Keep the bottom‐bar pills rectangular
+sep_left  = { open = "", close = "" }
+sep_right = { open = "", close = "" }
+

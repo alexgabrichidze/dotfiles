@@ -1,0 +1,85 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 32,
+  "font": "Noto Sans Mono Regular 11",
+  "passthrough": true,
+  "modules-left": [
+    "pulseaudio",
+    "pulseaudio#source",
+    "hyprland/workspaces",
+    "hyprland/language"
+  ],
+
+  "modules-center": [
+    "clock"
+  ],
+
+  "modules-right": [
+    "network",
+    "tray",
+    "temperature",
+    "cpu",
+    "battery"
+  ],
+
+  "clock": {
+    "format": "{:%I:%M %p}"
+  },
+
+  "cpu": {
+    "format": "cpu {usage}%"
+  },
+
+    "battery": {
+  "format": "bat {capacity}%",
+  "interval": 5
+},
+
+  "pulseaudio": {
+    "format": "out {volume}%",
+    "scroll-step": 0,
+    "interval": 1
+  },
+
+  "pulseaudio#source": {
+    "format": "{format_source}",
+    "format-source-muted": "muted",
+    "format-source": "in {volume}%",
+    "scroll-step": 0,
+    "interval": 1
+  },
+
+  "hyprland/workspaces": {
+  "active-only": true,
+  "format": "{id}",
+  "interval": 1
+},
+
+  "hyprland/language": {
+    "format": "{}",
+    "format-en": "us",
+    "format-ru": "ru",
+    "interval": 1
+  },
+
+  "network": {
+  "interface": "wlp4s0",
+  "format-wifi": "{bandwidthDownBytes} {bandwidthUpBytes} {essid} {ipaddr}",
+  "format-ethernet": "{bandwidthDownBytes} {bandwidthUpBytes} {ifname} {ipaddr}",
+  "format-disconnected": "down",
+  "interval": 1
+},
+
+  "tray": {
+    "icon-size": 16,
+    "spacing": 4
+  },
+
+  "temperature": {
+    "thermal-zone": 0,
+    "format": "tmp {temperatureC}°C",
+    "interval": 10
+  }
+}
+

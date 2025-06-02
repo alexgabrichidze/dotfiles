@@ -1,0 +1,39 @@
+* {
+  border: none;
+  border-radius: 0;
+  font-family: "Noto Sans Mono";
+  font-size: 13px;
+  color: rgba(212, 214, 212, 0.9);
+}
+
+window#waybar {
+  background: #181818;
+  border-bottom: 1px solid rgba(212, 214, 212, 0.8);
+}
+
+#workspaces button {
+  background: transparent;
+  color: rgba(212, 214, 212, 0.9);
+}
+
+#workspaces button.focused {
+  background: rgba(212, 214, 212, 0.1);
+}
+
+#clock,
+#battery,
+#cpu,
+#temperature,
+#network,
+#pulseaudio,
+#pulseaudio#source,
+#tray,
+#language {
+  padding: 0 8px;
+  background: transparent;
+}
+
+#tray {
+  opacity: 0.75;
+}
+

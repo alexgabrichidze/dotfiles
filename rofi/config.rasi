@@ -1,0 +1,65 @@
+window {
+	width: 25%;
+}
+
+configuration {
+	drun-display-format: "{name}";
+	steal-focus: true;
+	no-lazy-grab: true;
+	matching: "fuzzy";
+	normal-window: true;
+	font: "Noto Sans Mono Regular 11";
+}
+
+listview {
+	lines: 5;
+	columns: 1;
+	scrollbar: false;
+	border: 1px 0px 0px 0px;
+	border-color: rgba(213,214,212,0.7);
+}
+
+entry {
+	placeholder: "";
+	text-color: #d5d6d4;
+	blink: false;
+	cursor-color: #d5d6d4;
+	cursor-width: 9px;
+}
+
+inputbar {
+	border: 0;
+	text-color: #d5d6d4;
+}
+
+window {
+	border: 1px;
+	border-color: rgba(213,214,212,0.7);
+	border-radius: 0px;
+	background-color: #181818;
+}
+
+
+element.normal.normal {
+	text-color: #d5d6d4;
+	background-color: #181818;
+}
+
+element.alternate.normal {
+	text-color: #d5d6d4;
+	background-color: #181818;
+}
+
+element.selected.normal {
+	background-color: #181818;
+	text-color: #d5d6d4;
+}
+
+prompt {
+    text-color: #d5d6d4;
+}
+
+num-filtered-rows, num-rows {
+    text-color: rgba(213,214,212,0.9);
+
+}
