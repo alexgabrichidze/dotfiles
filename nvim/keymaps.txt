@@ -1,0 +1,35 @@
+Neovim keymaps
+
+<leader>h    [n]  - Move to left window
+<leader>l    [n]  - Move to right window
+<leader>k    [n]  - Move to upper window
+<leader>j    [n]  - Move to lower window
+<leader>pm   [n]  - Open Lazy plugin manager
+<leader>q    [n]  - Close current buffer and switch to the next one
+<leader>e    [n]  - Toggle file tree (NvimTree)
+<leader>ff   [n]  - Find files using Telescope
+<leader>fg   [n]  - Live grep (search in files)
+<leader>fb   [n]  - List open buffers
+<leader>fh   [n]  - Show help tags
+<leader>fo   [n]  - Show recently opened files
+<leader>fc   [n]  - Find config files (Neovim config folder)
+<leader>ss   [v]  - Start incremental selection
+<leader>si   [v]  - Increase selected syntax node
+<leader>sc   [v]  - Increase selection to scope
+<leader>sd   [v]  - Decrease selected syntax node
+af           [v]  - Select around function
+if           [v]  - Select inner part of function
+ac           [v]  - Select around class
+ic           [v]  - Select inner part of class
+ap           [v]  - Select around parameter
+ip           [v]  - Select inner part of parameter
+al           [v]  - Select around loop
+il           [v]  - Select inner part of loop
+acond        [v]  - Select around conditional
+icond        [v]  - Select inner part of conditional
+ab           [v]  - Select around block
+ib           [v]  - Select inner part of block
+<Tab>        [i]  - Select next completion item
+<S-Tab>      [i]  - Select previous completion item
+<CR>         [i]  - Confirm completion
+<C-Space>    [i]  - Trigger completion menu
