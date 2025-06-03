@@ -14,6 +14,10 @@ vim.keymap.set("n", "<leader>pm", function()
   require("lazy").show()
 end, { desc = "Open Lazy Plugin Manager" })
 
+-- Open Oil.nvim keybinding
+vim.keymap.set("n", "<leader>o", function()
+  require("oil").open()
+end, { desc = "Open Oil file explorer" })
 
 -- Buffer closure 
 vim.keymap.set("n", "<leader>q", function()
