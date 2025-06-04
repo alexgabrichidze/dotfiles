@@ -32,3 +32,9 @@ vim.keymap.set("n", "<leader>q", function()
     vim.cmd("bd#")       -- Delete the previous one (which is now #)
   end
 end, { desc = "Close buffer and switch to next" })
+
+-- Next buffer
+vim.keymap.set("n", "<Tab>", "<cmd>BufferLineCycleNext<CR>", { desc = "Next buffer" })
+
+-- Previous buffer
+vim.keymap.set("n", "<S-Tab>", "<cmd>BufferLineCyclePrev<CR>", { desc = "Previous buffer" })
