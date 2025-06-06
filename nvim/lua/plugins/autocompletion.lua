@@ -11,7 +11,7 @@ return {
     "hrsh7th/cmp-path",
     "saadparwaiz1/cmp_luasnip",
 
-    -- Snippet engine (even if you don’t write your own)
+    -- Snippet engine
     "L3MON4D3/LuaSnip",
 
     -- Autopairs integration
@@ -20,7 +20,6 @@ return {
   config = function()
     local cmp = require("cmp")
 
-    -- Optional: setup autopairs
     local cmp_autopairs = require("nvim-autopairs.completion.cmp")
     require("nvim-autopairs").setup({})
     cmp.event:on("confirm_done", cmp_autopairs.on_confirm_done())
