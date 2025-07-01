@@ -1,0 +1,91 @@
+# Yazi configuration
+
+# Manager settings
+[manager]
+ratio          = [1, 4, 3]
+sort_by        = "alphabetical"
+sort_sensitive = false
+sort_reverse   = false
+sort_dir_first = true
+sort_translit  = false
+linemode       = "size"
+show_hidden    = true
+show_symlink   = true
+scrolloff      = 3
+mouse_events   = ["click", "scroll"]
+title_format   = "{cwd}"
+
+# Preview panel settings
+[preview]
+wrap           = "yes"
+tab_size       = 4
+image          = false
+video          = false
+svg            = false
+pdf            = { command = "pdftotext -nopgbrk {path} -", enabled = true }
+image_delay    = 100
+image_filter   = "lanczos3"
+image_quality  = 80
+sixel_fraction = 12
+max_width      = 0
+max_height     = 0
+
+# Opener definitions
+[opener]
+pdf     = [{ run = "zathura \"$@\"",    orphan = true, for = "unix" }]
+img     = [{ run = "sxiv \"$@\"",       orphan = true, for = "unix" }]
+archive = [{ run = "file-roller \"$@\"", orphan = true, for = "unix" }]
+open    = [{ run = "xdg-open \"$@\"",    desc   = "Open" }]
+
+# File-type open rules
+[open]
+prepend_rules = [
+  { name = "*.pdf",    use = "pdf" },
+  { name = "*.png",    use = "img" },
+  { name = "*.jpg",    use = "img" },
+  { name = "*.jpeg",   use = "img" },
+  { name = "*.zip",    use = "archive" },
+  { name = "*.tar",    use = "archive" },
+  { name = "*.tar.gz", use = "archive" },
+  { name = "*.tar.bz2",use = "archive" }
+]
+append_rules = [
+  { name = "*", use = "open" }
+]
+
+# Task and resource limits
+[tasks]
+micro_workers    = 64
+macro_workers    = 4
+bizarre_retry    = 3
+suppress_preload = false
+image_alloc      = 0
+image_bound      = [0, 0]
+
+# Plugin settings
+[plugin]
+prepend_fetchers   = []
+append_fetchers    = []
+prepend_previewers = [
+  { mime = "application/json",    run = "json" },
+  { mime = "application/x-yaml",  run = "json" },
+  { mime = "application/zip",     run = "archive" }
+]
+append_previewers  = [
+  { name = "*", run = "binary" }
+]
+prepend_preloaders = []
+append_preloaders  = []
+
+# Candidate list sorting
+[which]
+sort_by        = "key"
+sort_sensitive = false
+sort_reverse   = false
+sort_translit  = false
+
+# Default sections (unmodified)
+# [input]
+# [confirm]
+# [pick]
+

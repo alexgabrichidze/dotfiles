@@ -1,0 +1,25 @@
+# Mako configuration
+
+# Colors
+background-color=#191919
+text-color=#d8d8d8EE
+border-color=#d8d8d8AA
+
+# Border
+border-size=1
+border-radius=0
+
+# Font
+font=Noto Sans Mono 11
+
+# Layout and behavior
+anchor=top-right
+margin=5,5,5,5
+padding=10
+width=350
+height=150
+default-timeout=9000
+ignore-timeout=1
+
+[urgency=critical]
+default-timeout=9000

@@ -1,0 +1,45 @@
+# Alacritty configuration
+
+[general]
+working_directory = "None"
+live_config_reload = true
+
+[window]
+dimensions = { columns = 0, lines = 0 }
+position = "None"
+padding = { x = 6, y = 2 }
+dynamic_padding = false
+decorations = "Full"
+opacity = 1.0
+blur = false
+startup_mode = "Windowed"
+title = "Alacritty"
+dynamic_title = true
+
+[font]
+normal = { family = "monospace", style = "Regular" }
+bold = { family = "monospace", style = "Bold" }
+italic = { family = "monospace", style = "Italic" }
+bold_italic = { family = "monospace", style = "Bold Italic" }
+size = 11.0
+offset = { x = 0, y = 0 }
+glyph_offset = { x = 0, y = 0 }
+builtin_box_drawing = true
+
+[colors]
+    [colors.primary]
+    foreground = "#d8d8d8"
+
+    [colors.normal]
+    white = "#d8d8d8"
+
+    [colors.bright]
+    white = "#d8d8d8"
+
+[scrolling]
+history = 10000
+multiplier = 3
+
+[terminal]
+shell = { program = "/usr/bin/bash", args = ["-l"] }
+osc52 = "OnlyCopy"
