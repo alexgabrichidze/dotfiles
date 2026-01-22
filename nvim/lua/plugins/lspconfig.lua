@@ -3,8 +3,6 @@
 return {
     "neovim/nvim-lspconfig",
     config = function()
-        local lspconfig = require("lspconfig")
-
         local on_attach = function(_, bufnr)
             local bufmap = function(keys, fn, desc)
                 if desc then
@@ -30,25 +28,28 @@ return {
         end
 
         -- Python
-        lspconfig.pyright.setup({
+        vim.lsp.config("pyright", {
             on_attach = on_attach,
             capabilities = capabilities,
         })
+        vim.lsp.enable("pyright")
 
         -- C/C++
-        lspconfig.clangd.setup({
+        vim.lsp.config("clangd", {
             on_attach = on_attach,
             capabilities = capabilities,
         })
+        vim.lsp.enable("clangd")
 
         -- Java
-        lspconfig.jdtls.setup({
+        vim.lsp.config("jdtls", {
             on_attach = on_attach,
             capabilities = capabilities,
         })
+        vim.lsp.enable("jdtls")
 
         -- Lua
-        lspconfig.lua_ls.setup({
+        vim.lsp.config("lua_ls", {
             on_attach = on_attach,
             capabilities = capabilities,
             settings = {
@@ -59,11 +60,13 @@ return {
                 },
             },
         })
+        vim.lsp.enable("lua_ls")
 
         -- Bash
-        lspconfig.bashls.setup({
+        vim.lsp.config("bashls", {
             on_attach = on_attach,
             capabilities = capabilities,
         })
+        vim.lsp.enable("bashls")
     end,
 }
