@@ -11,6 +11,14 @@ These are personal working configs, not a one-command distro. Use them as a map,
 [![tmux](https://img.shields.io/badge/tmux-1BB91F?style=flat&logo=tmux&logoColor=white)](https://github.com/tmux/tmux)
 [![Yazi](https://img.shields.io/badge/Yazi-111111?style=flat&logo=files&logoColor=white)](https://yazi-rs.github.io/)
 
+### Screenshots
+
+![Hyprland desktop](assets/desktop.webp)
+
+![Rofi launcher](assets/rofi.webp)
+
+![Neovim editing Hyprland config](assets/neovim.webp)
+
 ### What This Is
 
 - `hypr/` - modular Hyprland config split by monitors, variables, autostart, environment, input, keybindings, windows, and aesthetics.
