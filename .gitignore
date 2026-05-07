@@ -1,0 +1,32 @@
+# Ignore everything by default
+*
+
+# Allow only specific folders
+!alacritty/
+!hypr/
+!nvim/
+!rofi/
+!waybar/
+!yazi/
+!tmux/
+!mako/
+!assets/
+
+# Ensure Git includes the contents of those folders
+!alacritty/**
+!hypr/**
+!nvim/**
+!rofi/**
+!waybar/**
+!yazi/**
+!tmux/**
+!mako/**
+!assets/*.webp
+
+# Explicitly exclude 
+tmux/plugins/
+tmux/plugins/**
+
+# Allow README.md
+!.gitignore
+!README.md
