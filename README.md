@@ -4,12 +4,12 @@ My Arch Linux + Hyprland setup. Keyboard-first, Wayland-native, low decoration, 
 
 These are personal working configs, not a one-command distro. Use them as a map, steal what is useful, and expect to adjust monitor names, package names, paths, and hardware-specific bits.
 
-[![Arch Linux](https://img.shields.io/badge/Arch_Linux-1793D1?style=for-the-badge&logo=archlinux&logoColor=white)](https://archlinux.org/)
-[![Hyprland](https://img.shields.io/badge/Hyprland-58E1FF?style=for-the-badge&logo=hyprland&logoColor=111111)](https://hyprland.org/)
-[![Wayland](https://img.shields.io/badge/Wayland-FFBC00?style=for-the-badge&logo=linux&logoColor=111111)](https://wayland.freedesktop.org/)
-[![Neovim](https://img.shields.io/badge/Neovim-57A143?style=for-the-badge&logo=neovim&logoColor=white)](https://neovim.io/)
-[![tmux](https://img.shields.io/badge/tmux-1BB91F?style=for-the-badge&logo=tmux&logoColor=white)](https://github.com/tmux/tmux)
-[![Yazi](https://img.shields.io/badge/Yazi-111111?style=for-the-badge&logo=files&logoColor=white)](https://yazi-rs.github.io/)
+[![Arch Linux](https://img.shields.io/badge/Arch_Linux-1793D1?style=flat&logo=archlinux&logoColor=white)](https://archlinux.org/)
+[![Hyprland](https://img.shields.io/badge/Hyprland-58E1FF?style=flat&logo=hyprland&logoColor=111111)](https://hyprland.org/)
+[![Wayland](https://img.shields.io/badge/Wayland-FFBC00?style=flat&logo=linux&logoColor=111111)](https://wayland.freedesktop.org/)
+[![Neovim](https://img.shields.io/badge/Neovim-57A143?style=flat&logo=neovim&logoColor=white)](https://neovim.io/)
+[![tmux](https://img.shields.io/badge/tmux-1BB91F?style=flat&logo=tmux&logoColor=white)](https://github.com/tmux/tmux)
+[![Yazi](https://img.shields.io/badge/Yazi-111111?style=flat&logo=files&logoColor=white)](https://yazi-rs.github.io/)
 
 ### What This Is
 
