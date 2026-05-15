@@ -40,17 +40,17 @@ open    = [{ run = "xdg-open \"$@\"",    desc   = "Open" }]
 # File-type open rules
 [open]
 prepend_rules = [
-  { name = "*.pdf",    use = "pdf" },
-  { name = "*.png",    use = "img" },
-  { name = "*.jpg",    use = "img" },
-  { name = "*.jpeg",   use = "img" },
-  { name = "*.zip",    use = "archive" },
-  { name = "*.tar",    use = "archive" },
-  { name = "*.tar.gz", use = "archive" },
-  { name = "*.tar.bz2",use = "archive" }
+  { url = "*.pdf",    use = "pdf" },
+  { url = "*.png",    use = "img" },
+  { url = "*.jpg",    use = "img" },
+  { url = "*.jpeg",   use = "img" },
+  { url = "*.zip",    use = "archive" },
+  { url = "*.tar",    use = "archive" },
+  { url = "*.tar.gz", use = "archive" },
+  { url = "*.tar.bz2",use = "archive" }
 ]
 append_rules = [
-  { name = "*", use = "open" }
+  { url = "*", use = "open" }
 ]
 
 # Task and resource limits
@@ -72,7 +72,7 @@ prepend_previewers = [
   { mime = "application/zip",     run = "archive" }
 ]
 append_previewers  = [
-  { name = "*", run = "binary" }
+  { url = "*", run = "binary" }
 ]
 prepend_preloaders = []
 append_preloaders  = []
@@ -88,4 +88,3 @@ sort_translit  = false
 # [input]
 # [confirm]
 # [pick]
-
