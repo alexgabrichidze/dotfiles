@@ -32,7 +32,8 @@ max_height     = 0
 
 # Opener definitions
 [opener]
-pdf     = [{ run = "zathura \"$@\"",    orphan = true, for = "unix" }]
+pdf     = [{ run = "firefox \"$@\"",    orphan = true, for = "unix" }]
+md      = [{ run = "nvim \"$@\"",       block = true,  for = "unix" }]
 img     = [{ run = "sxiv \"$@\"",       orphan = true, for = "unix" }]
 archive = [{ run = "file-roller \"$@\"", orphan = true, for = "unix" }]
 open    = [{ run = "xdg-open \"$@\"",    desc   = "Open" }]
@@ -41,6 +42,7 @@ open    = [{ run = "xdg-open \"$@\"",    desc   = "Open" }]
 [open]
 prepend_rules = [
   { url = "*.pdf",    use = "pdf" },
+  { url = "*.md",     use = "md" },
   { url = "*.png",    use = "img" },
   { url = "*.jpg",    use = "img" },
   { url = "*.jpeg",   use = "img" },
