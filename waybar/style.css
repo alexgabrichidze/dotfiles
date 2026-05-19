@@ -27,13 +27,26 @@ window#waybar {
 #network,
 #pulseaudio,
 #pulseaudio#source,
+#custom-g502-battery,
 #tray,
 #language {
   padding: 0 8px;
   background: transparent;
 }
 
+#custom-g502-battery.low {
+  color: #f5c542;
+}
+
+#custom-g502-battery.critical {
+  color: #ff5c5c;
+}
+
+#custom-g502-battery.charging,
+#custom-g502-battery.full {
+  color: #7bd88f;
+}
+
 #tray {
   opacity: 0.75;
 }
-

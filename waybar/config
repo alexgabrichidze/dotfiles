@@ -8,7 +8,8 @@
     "pulseaudio",
     "pulseaudio#source",
     "hyprland/workspaces",
-    "hyprland/language"
+    "hyprland/language",
+    "custom/g502-battery"
   ],
 
   "modules-center": [
@@ -63,6 +64,15 @@
     "interval": 1
   },
 
+  "custom/g502-battery": {
+    "exec": "/home/alex/.config/waybar/scripts/g502-battery",
+    "return-type": "json",
+    "format": "{}",
+    "interval": 5,
+    "tooltip": true,
+    "hide-empty-text": true
+  },
+
   "network": {
   "interface": "wlp4s0",
   "format-wifi": "{bandwidthDownBytes} {bandwidthUpBytes} {essid} {ipaddr}",
@@ -82,4 +92,3 @@
     "interval": 10
   }
 }
-
