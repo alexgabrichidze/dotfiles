@@ -7,7 +7,6 @@ return {
 
         lint.linters_by_ft = {
             python = { "flake8" },
-            lua = { "luacheck" },
             cpp = { "cpplint" },
             c = { "cpplint" },
             java = { "checkstyle" },
