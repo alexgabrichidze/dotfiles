@@ -16,3 +16,5 @@ require("config.animations")
 require("config.input")
 
 require("config.permissions")
+
+require("config.windows")
