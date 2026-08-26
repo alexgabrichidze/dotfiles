@@ -18,3 +18,5 @@ require("config.input")
 require("config.permissions")
 
 require("config.windows")
+
+require("config.bindings")
