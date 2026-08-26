@@ -6,3 +6,5 @@ assert(type(variables.apps) == "table")
 assert(type(variables.apps.terminal) == "string")
 
 require("config.monitors")
+
+require("config.environment")
