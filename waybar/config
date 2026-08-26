@@ -39,13 +39,14 @@
 
   "pulseaudio": {
     "format": "out {volume}%",
+    "format-muted": "out muted",
     "scroll-step": 0,
     "interval": 1
   },
 
   "pulseaudio#source": {
     "format": "{format_source}",
-    "format-source-muted": "muted",
+    "format-source-muted": "in muted",
     "format-source": "in {volume}%",
     "scroll-step": 0,
     "interval": 1
