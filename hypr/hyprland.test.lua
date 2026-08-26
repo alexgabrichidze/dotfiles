@@ -12,3 +12,5 @@ require("config.environment")
 require("config.layout")
 require("config.appearance")
 require("config.animations")
+
+require("config.input")
