@@ -20,3 +20,5 @@ require("config.permissions")
 require("config.windows")
 
 require("config.bindings")
+
+require("config.autostart")
