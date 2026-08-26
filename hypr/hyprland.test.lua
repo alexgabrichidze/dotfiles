@@ -8,3 +8,7 @@ assert(type(variables.apps.terminal) == "string")
 require("config.monitors")
 
 require("config.environment")
+
+require("config.layout")
+require("config.appearance")
+require("config.animations")
