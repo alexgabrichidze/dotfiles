@@ -8,7 +8,6 @@
 !rofi/
 !waybar/
 !yazi/
-!tmux/
 !mako/
 !assets/
 
@@ -19,13 +18,8 @@
 !rofi/**
 !waybar/**
 !yazi/**
-!tmux/**
 !mako/**
 !assets/*.webp
-
-# Explicitly exclude 
-tmux/plugins/
-tmux/plugins/**
 
 # Allow README.md
 !.gitignore
