@@ -138,3 +138,9 @@ hl.animation({
     bezier = "almostLinear",
     style = "slidevert",
 })
+
+-- Show newly detected monitors immediately instead of zooming/fading them in
+hl.animation({
+    leaf = "monitorAdded",
+    enabled = false,
+})
