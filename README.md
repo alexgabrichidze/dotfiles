@@ -20,13 +20,13 @@ Some paths and hardware settings are specific to my system
 
 ## Configs
 
-- `hypr/` — modular Hyprland config using the Lua API added in version 0.55
-- `waybar/` — status bar
-- `nvim/` — Neovim config using lazy.nvim
-- `rofi/` — application launcher
-- `alacritty/` — terminal config
-- `mako/` — notification daemon
-- `yazi/` — terminal file manager
+- `hypr/`: modular Hyprland config using the Lua API added in version 0.55
+- `waybar/`: status bar
+- `nvim/`: Neovim config using lazy.nvim
+- `rofi/`: application launcher
+- `alacritty/`: terminal config
+- `mako/`: notification daemon
+- `yazi/`: terminal file manager
 
 ## Keybindings
 
@@ -50,11 +50,11 @@ Some paths and hardware settings are specific to my system
 
 Values likely to need changes
 
-- `hypr/config/monitors.lua` — monitor descriptor, resolution, refresh rate, and scale
-- `hypr/config/variables.lua` — default applications
-- `hypr/config/input.lua` — keyboard layouts and pointer settings
-- `hypr/config/bindings/media.lua` — ASUS keyboard backlight device
-- `hypr/config/windows.lua` — application workspace rules
-- `hypr/hyprpaper.conf` — wallpaper path
-- `waybar/config` — script path, network interface, and thermal zone
-- `waybar/scripts/g502-battery` — Logitech mouse model
+- `hypr/config/monitors.lua`: monitor descriptor, resolution, refresh rate, and scale
+- `hypr/config/variables.lua`: default applications
+- `hypr/config/input.lua`: keyboard layouts and pointer settings
+- `hypr/config/bindings/media.lua`: ASUS keyboard backlight device
+- `hypr/config/windows.lua`: application workspace rules
+- `hypr/hyprpaper.conf`: wallpaper path
+- `waybar/config`: script path, network interface, and thermal zone
+- `waybar/scripts/g502-battery`: Logitech mouse model
